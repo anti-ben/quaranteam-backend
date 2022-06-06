@@ -1,0 +1,10 @@
+apiVersion: security.istio.io/v1beta1
+kind: PeerAuthentication
+metadata:
+  name: mongodb-nomtls-peerauthn
+spec:
+  selector:
+    matchLabels:
+      app: quaranteam-backend
+  mtls:
+    mode: DISABLE

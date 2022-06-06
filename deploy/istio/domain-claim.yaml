@@ -1,0 +1,8 @@
+apiVersion: networking.cpd.rakuten/v1alpha1
+kind: DomainClaim
+metadata:
+  name: quaranteam-test.jpe2-caas1-dev1.caas.jpe2b.r-local.net
+  namespace: cc-tech-newgrad-h-quaranteam
+spec:
+  domains:
+    - quaranteam-test.jpe2-caas1-dev1.caas.jpe2b.r-local.net

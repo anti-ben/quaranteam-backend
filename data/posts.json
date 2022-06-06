@@ -1,0 +1,115 @@
+[
+  {
+    "_id": "628480ef859107002ce407fb",
+    "hashtag": [
+      "test tag"
+    ],
+    "user": "627df3c17e49186405f9aabc",
+    "group": "6281f0782b5c8ec785f0ddf1",
+    "title": "test title1",
+    "content": "content1",
+    "reaction": {
+      "like": 0,
+      "takeCare": 0,
+      "meToo": 0,
+      "comment": 0
+    },
+    "reacted": {
+      "like": false,
+      "takeCare": false,
+      "meToo": false
+    },
+    "createdAt": "2022-05-16T07:24:00.840+00:00",
+    "updatedAt": "2022-05-16T07:24:00.840+00:00"
+  },
+  {
+    "_id": "62858d40f50210c7b335e3b8",
+    "hashtag": [
+      "test tag"
+    ],
+    "user": "627df47c7e49186405f9aabe",
+    "group": "6281f0782b5c8ec785f0ddf1",
+    "title": "test title2",
+    "content": "content2",
+    "reaction": {
+      "like": 0,
+      "takeCare": 0,
+      "meToo": 0,
+      "comment": 0
+    },
+    "reacted": {
+      "like": false,
+      "takeCare": false,
+      "meToo": false
+    },
+    "createdAt": "2022-05-16T07:24:00.840+00:00",
+    "updatedAt": "2022-05-16T07:24:00.840+00:00"
+  },
+  {
+    "_id": "62873a1977b82f328dac98b1",
+    "reaction": {
+      "like": 0,
+      "takeCare": 0,
+      "meToo": 0,
+      "comment": 0
+    },
+    "reacted": {
+      "like": false,
+      "takeCare": false,
+      "meToo": false
+    },
+    "hashtag": [
+      "Headache"
+    ],
+    "title": "This is a title of a test comment",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "user": "627df3c17e49186405f9aabc",
+    "group": "6281f0782b5c8ec785f0ddf1",
+    "post": "628480ef859107002ce407fb",
+    "createdAt": "2022-05-16T07:24:00.840+00:00",
+    "updatedAt": "2022-05-16T07:24:00.840+00:00"
+  },
+  {
+    "_id": "628740a80258613874400037",
+    "reaction": {
+      "like": 0,
+      "takeCare": 0,
+      "meToo": 0,
+      "comment": 0
+    },
+    "reacted": {
+      "like": false,
+      "takeCare": false,
+      "meToo": false
+    },
+    "hashtag": [],
+    "title": "This is a title of a test comment 2",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "user": "627df3c17e49186405f9aabc",
+    "group": "6281f0782b5c8ec785f0ddf1",
+    "post": "628480ef859107002ce407fb",
+    "createdAt": "2022-05-16T07:24:00.840+00:00",
+    "updatedAt": "2022-05-16T07:24:00.840+00:00"
+  },
+  {
+    "_id": "628761108415d4cf1c3eef30",
+    "user": "627df47c7e49186405f9aabe",
+    "group": "6281f0782b5c8ec785f0ddf1",
+    "title": "test comment comment",
+    "content": "comment",
+    "reaction": {
+      "like": 0,
+      "takeCare": 0,
+      "meToo": 0,
+      "comment": 0
+    },
+    "reacted": {
+      "like": false,
+      "takeCare": false,
+      "meToo": false
+    },
+    "post": "62873a1977b82f328dac98b1",
+    "createdAt": "2022-05-16T07:24:00.840+00:00",
+    "updatedAt": "2022-05-16T07:24:00.840+00:00"
+  }
+]

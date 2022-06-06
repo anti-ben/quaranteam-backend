@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: quaranteam-backend
+  name: quaranteam-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: quaranteam-backend
+  template:
+    metadata:
+      labels:
+        app: quaranteam-backend
+        version: v0.1
+    spec:
+      containers:
+      - name: quaranteam-backend
+        image: quaranteam-backend-image
+        ports:
+          - containerPort: 3001
+        resources:
+          limits:
+            cpu: 600m
+            memory: 800Mi
+          requests:
+            cpu: 500m
+            memory: 600Mi
+        readinessProbe:
+          httpGet:
+            path: /api/v1/
+            port: 3001
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        livenessProbe:
+          httpGet:
+            path: /api/health-check
+            port: 3001
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        securityContext:
+          runAsUser: 101
+      serviceAccountName: tenant-pod-default
+      automountServiceAccountToken: true # Istio sidecar needs to communicate with k8s API

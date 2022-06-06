@@ -1,0 +1,26 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: quaranteam-test.jpe2-caas1-dev1.caas.jpe2b.r-local.net
+  namespace: cc-tech-newgrad-h-quaranteam
+spec:
+  hosts:
+    - quaranteam-test.jpe2-caas1-dev1.caas.jpe2b.r-local.net
+  gateways:
+    - "caas-system/instant-domain-gateway"
+  http:
+    - name: backend-route
+      match:
+        - uri:
+            prefix: "/api"
+      route:
+        - destination:
+            host: quaranteam-backend
+            port:
+              number: 3001
+    - name: frontend-route
+      route:
+        - destination:
+            host: quaranteam-frontend
+            port:
+              number: 80

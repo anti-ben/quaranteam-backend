@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: quaranteam-gateway
+  namespace: cc-tech-newgrad-h-quaranteam
+spec:
+  selector:
+    istio: ingressgateway # this will make shared ingress gateway accept your host
+  servers:
+    - port:
+        number: 80
+        name: http
+        protocol: HTTP
+      hosts:
+        - "quaranteam.r-local.net"
